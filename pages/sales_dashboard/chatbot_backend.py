@@ -1,9 +1,11 @@
 from openai import OpenAI
 import time
 import json
+import os
 
+api_key = os.environ["OPENAI_API_KEY"]
+client = OpenAI(api_key=api_key)
 
-client = OpenAI(api_key="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")
 instructions = """You are a data analyst and chart design expert helping users build charts and answer questions in a fashion brand.
 
 Ensure you answer the user's question accurately and given the context of the dataset. 
