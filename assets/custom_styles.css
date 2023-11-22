@@ -1,0 +1,227 @@
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Banner
+- control pannel and data pannel
+
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+/* Banner
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.banner {
+  background-color:#1e2130;
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1.5px solid #d6d6d6;
+  padding: 0.2rem 5rem;
+  width: 100%;
+}
+
+.banner-text {
+  color:aliceblue;
+}
+
+.banner-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.banner Img {
+  height: 3.5rem;
+  margin-right: 120%;
+}
+
+.tab-container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  height: 4rem;
+}
+
+
+/* control pannel 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.control-pannel {
+  background-color: #e0e0e0;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.data-pannel {
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+
+/* data panel
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#sankey-and-first-message {
+  width: 100%;
+  height: calc(100vh - 10rem);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+#sankey-diagram {
+  width: 100%;
+  flex-grow: 1;
+}
+
+#first-message {
+  justify-content: center; /* Centers children horizontally in the flex container */
+  align-items: center; /* Centers children vertically in the flex container, useful if you have multiple lines of text or elements inside first-message */
+  flex-direction: row;
+  display: flex;
+}
+
+#sample-node {
+  background-color: darksalmon;
+  border: 1px solid black; 
+}
+
+/* grid container
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* three equally sized columns */
+  gap: 15px; /* space between grid items */
+  text-align: center;
+}
+
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* three equally sized columns */
+  gap: 15px; /* space between grid items */
+  text-align: center;
+}
+
+.grid-container-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* three equally sized columns */
+  gap: 15px; /* space between grid items */
+  text-align: center;
+}
+
+.grid-container-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* three equally sized columns */
+  gap: 15px; /* space between grid items */
+  text-align: center;
+}
+
+.grid-container-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* three equally sized columns */
+  gap: 15px; /* space between grid items */
+  text-align: center;
+}
+
+.grid-container-7 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* three equally sized columns */
+  gap: 10px; /* space between grid items */
+  text-align: center;
+}
+
+/* scorecards
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.scorecard {
+  border-style: groove;
+}
+
+.scorecard H4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.scorecard-content-connection-container {
+  position: relative;
+  height: 8rem;
+  width: 100%; 
+}
+
+.scorecard-connection-name-container {
+  display: flex;
+}
+
+.scorecard-connection-name-container P {
+  font-size: 1.6em;
+}
+
+.connection-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 16.67%;
+  height: 100%;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+
+.connection-content:nth-child(1) {
+  left: calc( 8.33% * 1); 
+}
+
+.connection-content:nth-child(2) {
+  left: calc( 8.33% * 3); 
+}
+
+.connection-content:nth-child(3) {
+  left: calc( 8.33% * 5); 
+}
+
+.connection-content:nth-child(4) {
+  left: calc( 8.33% * 7); 
+}
+
+.connection-content:nth-child(5) {
+  left: calc( 8.33% * 9); 
+}
+
+
+/* key-metrics graph
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#key-matrics-and-graph-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 10rem);
+}
+
+#responsible-graph {
+  flex-grow: 1;
+}
+
+/* AI Assistant
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#init-conversation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+}
+
+#init-questions {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr); /* three equally sized columns */
+  gap: 15px; /* space between grid items */
+  text-align: center;
+}
+
+.init-question {
+  background-color: #e0e0e0;
+  border: 1px solid gray; 
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
