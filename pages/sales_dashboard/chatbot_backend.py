@@ -3,7 +3,9 @@ import time
 import json
 import os
 
-api_key = os.environ["OPENAI_API_KEY"]
+# api_key = os.environ["OPENAI_API_KEY"]
+
+api_key = "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"
 client = OpenAI(api_key=api_key)
 
 instructions = """You are a data analyst and chart design expert helping users build charts and answer questions in a fashion brand.
