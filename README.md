@@ -4,7 +4,7 @@
 * Sankey Diagram in the dashboard
 ![My Project Screenshot](img_for_addme/sankey_diagram.png)
 
-* AI Assistant 
+* AI Assistant <br>
 you need to wait a while for the AI Assistant to generate the response for you 
 ![My Project Screenshot](img_for_addme/chatbot_init.png)
 
