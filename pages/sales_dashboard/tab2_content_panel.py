@@ -7,10 +7,10 @@ from pages.sales_dashboard.chatbot_backend import *
 
 
 init_questions = [
+    "break down sales by level2 category using a graph",
     "show me the sales performance on 2022-11-11 for all stores using a bar chart",
     "show me the top 10 sold products in Singapore using a pie chart",
     "compare the sales performance for stores between Shopify INTL and Shopify AU",
-    "break down sales by level2 category using a graph"
 ]
 
 def build_tab2_content():
