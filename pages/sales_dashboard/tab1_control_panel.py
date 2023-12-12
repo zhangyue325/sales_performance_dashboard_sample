@@ -23,7 +23,7 @@ def build_tab1_control_pannel(df):
             dcc.RadioItems(
                 id="tab1-content-selection",
                 options=["Key Metrics", "Sankey Diagram"],
-                value= "Key Metrics",
+                value= "Sankey Diagram",
                 inline=True
             ),
             html.Hr(),
